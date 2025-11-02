@@ -12,11 +12,7 @@ An asynchronous Retrieval-Augmented Generation (RAG) API built with FastAPI, Red
 
 ## Architecture
 
-```
-User Request → FastAPI Server → Redis Queue → Worker Process → OpenAI + Qdrant
-                    ↓                              ↓
-              Job ID returned              Result stored in Redis
-```
+![Architecture](./Async%20RAG%20API%20(Architecture).png)
 
 ## Tech Stack
 
@@ -241,7 +237,7 @@ This project uses `SimpleWorker` from RQ, which is compatible with Windows (stan
 
 ## License
 
-MIT
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contributing
 
