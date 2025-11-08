@@ -132,25 +132,6 @@ Response:
   "result": "Node.js is a JavaScript runtime built on Chrome's V8 engine..."
 }
 ```
-
-## Project Structure
-
-```
-RAG_QUEUE/
-├── client/
-│   ├── __init__.py
-│   └── rq_client.py          # Redis Queue client setup
-├── queues/
-│   └── worker.py             # Background job processor
-├── docker-compose.yml        # Qdrant container config
-├── index.py                  # PDF indexing script
-├── main.py                   # API entry point
-├── run_worker.py             # Worker entry point
-├── server.py                 # FastAPI routes
-├── requirements.txt          # Python dependencies
-└── .env                      # Environment variables
-```
-
 ## API Endpoints
 
 ### `GET /`
